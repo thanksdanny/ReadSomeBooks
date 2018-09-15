@@ -1,5 +1,5 @@
-# ReadSomeBooks
-
+# Python 学习手册
 1. Sep 12  p87-p157
 2. Sep 13  p157-p166
 3. Sep 14  p166-p209:学会了如何重新使用字符串的格式化，get到了怎么用format格式化
+4. Sep 15  p210-p238 : 列表与字典的基本使用
