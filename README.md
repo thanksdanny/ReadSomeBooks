@@ -20,4 +20,5 @@
 		* vals = [1, 3, 5]
 		* D3 = dict(zip(keys, vals))
 	* enumerate内置函数用法
+9. Sep 20  p360-403
 		 
