@@ -10,4 +10,14 @@
 	* 引用与拷贝
 6. Sep 17  p272-p291 
 7. Sep 18  P292-p321
-8. Sep 19  p322-p359  
+8. Sep 19  p322-p359 
+	* zip() 与 map()的配合for寻欢的使用
+	* zip()构造字典
+		* D2={}
+		* for (k, v) in zip(keys, vals):D2[k] = v
+	* 第二种办法构造字典
+		* keys = ['a', 'b', 'c']
+		* vals = [1, 3, 5]
+		* D3 = dict(zip(keys, vals))
+	* enumerate内置函数用法
+		 
