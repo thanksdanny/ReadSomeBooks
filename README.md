@@ -21,4 +21,11 @@
 		* D3 = dict(zip(keys, vals))
 	* enumerate内置函数用法
 9. Sep 20  p360-403
-		 
+	* lines =[line.rstrip() for line in lines]
+	* lines = [line.rstrip() for line in open('scriptl.py') if line[o] == 'p']
+		* res =[]
+		* for line in open('scriptl.py'):
+		* 	if line[o] == 'p':
+		*		res.append(line.rstrip())
+
+	
