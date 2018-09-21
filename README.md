@@ -27,5 +27,5 @@
 		* for line in open('scriptl.py'):
 		* 	if line[o] == 'p':
 		*		res.append(line.rstrip())
-
+10. Sep 21 p404-414
 	
