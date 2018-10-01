@@ -32,6 +32,34 @@
 11. Sep 27 p415-443
 	* 作用域这块有点深，不是很好理解，尤其是方法嵌套；
 	* global/nonlocal 这两个还待理解
-12. Sep 28 p444-471
-13. Sep 29 p472-493
+12. Sep 28 p444-471 （18章 参数）
+	* 参数顺序法则
+		* 在函数调用中，参数必须以此顺序出现：任何参数位置（value），后面跟着任何关键字参数（name=value）和*sequence形式的组合，后面跟着**dict形式。
+		* 在函数头部，参数必须以此顺序出现：任何一般参数（name），紧跟着任何默认参数（name=value），如果有的话，后面是\*name（或者在Pyhton3.0中是\*）的形式，后面跟着任何 name 或者 name=value keyword-only 参数（在python 3.0中），后面跟着 **name形式。
+	* \* 与 \** 的运用 p456
+	* 三种 min 操作,计算最小值
+		* ``` python
+			def min1(*args):
+				res = args[0]
+				for arg in args[1:]:
+					res = arg
+				return res
+
+			def min2(first, *rest):
+				for arg in rest:
+					if arg < first:
+						first = arg
+				return first
+
+			def min3(*args):
+				tmp = list(args)
+				tmp.sort()
+				return tmp[0]
+
+			print(min1(3,4,1,2))
+			print(min2("bb", "aa"))
+		```
+	* set函数应用
+13. Sep 29 p472-493 （19章 函数的高级话题）
+	
 14. Sep 30 p494-536
