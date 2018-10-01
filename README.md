@@ -57,9 +57,13 @@
 				return tmp[0]
 
 			print(min1(3,4,1,2))
-			print(min2("bb", "aa"))
+			print(min2("bb", "aa")) 
 		```
 	* set函数应用
 13. Sep 29 p472-493 （19章 函数的高级话题）
-	
+	* 比较高级的进阶，这个大概了解下回头再回顾
+	* lambda 的使用
+	* map 的使用
+	* 函数式编程工具：filter、reduce
 14. Sep 30 p494-536
+15. Oct 01 p537-552
