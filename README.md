@@ -89,4 +89,13 @@
 	* 高级用法，回头需要回顾
 19. Oct 05 p616-630(24章 OOP)
 20. Oct 06 p631-647(25章 类代码编写基础)
+	* 运算符重载
 21. Oct 07 p648-685(26章 更多实例)
+	* 函数中第一个参数有默认值后，后面的参数都得有默认值；
+	* 使用扩展的方式，而不是替换方法
+		* 
+		``` python
+		class Manager(Person):
+			def giveRaise(self, percent, bonus=.10):
+				Person.giveRaise(self, percent + bonus)
+	```
