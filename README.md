@@ -13,20 +13,24 @@
 8. Sep 19  p322-p359 
 	* zip() 与 map()的配合for寻欢的使用
 	* zip()构造字典
-		* D2={}
-		* for (k, v) in zip(keys, vals):D2[k] = v
+		``` python
+			D2={}
+			for (k, v) in zip(keys, vals):D2[k] = v
 	* 第二种办法构造字典
-		* keys = ['a', 'b', 'c']
-		* vals = [1, 3, 5]
-		* D3 = dict(zip(keys, vals))
+		``` python
+			keys = ['a', 'b', 'c']
+			vals = [1, 3, 5]
+			D3 = dict(zip(keys, vals))
 	* enumerate内置函数用法
 9. Sep 20  p360-403
-	* lines =[line.rstrip() for line in lines]
-	* lines = [line.rstrip() for line in open('scriptl.py') if line[o] == 'p']
-		* res =[]
-		* for line in open('scriptl.py'):
-		* 	if line[o] == 'p':
-		*		res.append(line.rstrip())
+	``` python
+		lines =[line.rstrip() for line in lines]
+
+		lines = [line.rstrip() for line in open('scriptl.py') if line[o] == 'p']
+		res =[]
+			for line in open('scriptl.py'):
+				if line[o] == 'p':
+					res.append(line.rstrip())
 10. Sep 21 p404-414
 > (中间过了个中秋假，而且发版忙就停了几天，继续打卡)
 11. Sep 27 p415-443
