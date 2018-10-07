@@ -58,7 +58,6 @@
 
 			print(min1(3,4,1,2))
 			print(min2("bb", "aa")) 
-		```
 	* set函数应用
 13. Sep 29 p472-493 （19章 函数的高级话题）
 	* 比较高级的进阶，这个大概了解下回头再回顾
@@ -97,4 +96,5 @@
 		class Manager(Person):
 			def giveRaise(self, percent, bonus=.10):
 				Person.giveRaise(self, percent + bonus) 
-	* test
+	* 数据持久化，pickle
+22. Oct 08 p686-p709(27章 类代码编写细节)
