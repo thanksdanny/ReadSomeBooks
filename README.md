@@ -96,5 +96,5 @@
 		``` python
 		class Manager(Person):
 			def giveRaise(self, percent, bonus=.10):
-				Person.giveRaise(self, percent + bonus) ```
+				Person.giveRaise(self, percent + bonus) 
 	* test
