@@ -11,26 +11,26 @@
 6. Sep 17  p272-p291 
 7. Sep 18  P292-p321
 8. Sep 19  p322-p359 
-	* zip() 与 map()的配合for寻欢的使用
+	* zip() 与 map()的配合for循环的使用
 	* zip()构造字典
 		``` python
-			D2={}
-			for (k, v) in zip(keys, vals):D2[k] = v
+		D2={}
+		for (k, v) in zip(keys, vals):D2[k] = v
 	* 第二种办法构造字典
 		``` python
-			keys = ['a', 'b', 'c']
-			vals = [1, 3, 5]
-			D3 = dict(zip(keys, vals))
+		keys = ['a', 'b', 'c']
+		vals = [1, 3, 5]
+		D3 = dict(zip(keys, vals))
 	* enumerate内置函数用法
 9. Sep 20  p360-403
 	``` python
-		lines =[line.rstrip() for line in lines]
+	lines =[line.rstrip() for line in lines]
 
-		lines = [line.rstrip() for line in open('scriptl.py') if line[o] == 'p']
-		res =[]
-			for line in open('scriptl.py'):
-				if line[o] == 'p':
-					res.append(line.rstrip())
+	lines = [line.rstrip() for line in open('scriptl.py') if line[o] == 'p']
+	res =[]
+		for line in open('scriptl.py'):
+			if line[o] == 'p':
+				res.append(line.rstrip())
 10. Sep 21 p404-414
 > (中间过了个中秋假，而且发版忙就停了几天，继续打卡)
 11. Sep 27 p415-443
@@ -42,26 +42,27 @@
 		* 在函数头部，参数必须以此顺序出现：任何一般参数（name），紧跟着任何默认参数（name=value），如果有的话，后面是\*name（或者在Pyhton3.0中是\*）的形式，后面跟着任何 name 或者 name=value keyword-only 参数（在python 3.0中），后面跟着 **name形式。
 	* \* 与 \** 的运用 p456
 	* 三种 min 操作,计算最小值
-		* ``` python
-			def min1(*args):
-				res = args[0]
-				for arg in args[1:]:
-					res = arg
-				return res
+		* 
+		``` python
+		def min1(*args):
+			res = args[0]
+			for arg in args[1:]:
+				res = arg
+			return res
 
-			def min2(first, *rest):
-				for arg in rest:
-					if arg < first:
-						first = arg
-				return first
+		def min2(first, *rest):
+			for arg in rest:
+				if arg < first:
+					first = arg
+			return first
 
-			def min3(*args):
-				tmp = list(args)
-				tmp.sort()
-				return tmp[0]
+		def min3(*args):
+			tmp = list(args)
+			tmp.sort()
+			return tmp[0]
 
-			print(min1(3,4,1,2))
-			print(min2("bb", "aa")) 
+		print(min1(3,4,1,2))
+		print(min2("bb", "aa")) 
 	* set函数应用
 13. Sep 29 p472-493 （19章 函数的高级话题）
 	* 比较高级的进阶，这个大概了解下回头再回顾
@@ -102,3 +103,4 @@
 				Person.giveRaise(self, percent + bonus) 
 	* 数据持久化，pickle
 22. Oct 08 p686-p709(27章 类代码编写细节)
+23. Oct 09 p710-p740(28章 运算符重载)
