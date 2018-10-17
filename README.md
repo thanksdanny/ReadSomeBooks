@@ -109,5 +109,32 @@
 	* 委托通常以__getattr__钩子方法实现，通过__getattr__把任意读取转发给包装对象
 	* __call__方法
 25. Oct 11 p775-p822(30章 类的高级主题)
+	* 高级用法还是不是很懂，回头重温
+	* __slot__的用法
+	* 元类
+	* 装饰器基础
 26. Oct 12 p823-p834(31章 异常基础)
+	* 用户自定义异常
 27. Oct 17 p835-p856(32章 异常编码细节)
+	* 利用 try/finally 编写终止行为
+	``` python
+	class MyError(Exception):pass
+	def stuff(file):
+		raise MyError()
+	file = open('data', 'w')
+	try:
+		stuff(file)
+	finally:
+		file.close()
+	```
+	* finally 用于清理动作
+	* 顺序: try->except->else->finally
+	* 异常连 raise from
+	* with/as 使用
+	```python
+	with open(r'路径') as myfile:
+		for line in myfile:
+			ptint(line)
+			... more code here...
+	```
+	
