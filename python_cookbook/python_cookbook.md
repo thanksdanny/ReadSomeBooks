@@ -3,7 +3,7 @@
     * p10 的程序 yeild还需要再理解一下
     * 查找最大或最小的 N 个元素(使用heapq模块的两个函数nlargest()和nsmallest()) p12
 
-2. day 02 p40-p80(第二章 字符串和文本)
+2. day 02 p40-p50(第二章 字符串和文本)
     * re.split()比str.split()能更灵活切割
     ```python
     # demo
@@ -11,4 +11,4 @@
     import re
     re.split(r'[;,\s]\s*', line)
     ```
-3 day 03
+3. day 03 p50-70(第二章 字符串和文本)
