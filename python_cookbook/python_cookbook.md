@@ -43,3 +43,6 @@ def get_previout_byday(dayname, start_date=None):
     target_date = start_date - timedelta(days=days_ago)
     return target_date
 ```
+
+5. day 05 p100-130(第三章:数字日期和时间)
+    * 计算当月份的日期范围
